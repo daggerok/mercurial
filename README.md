@@ -44,4 +44,8 @@ hg branches
 
 # show current branch `git branch`
 hg branch
+hg identify -b
+
+# switch to another branch `git checkout feature`
+hg update feature
 ```
