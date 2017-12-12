@@ -48,4 +48,10 @@ hg identify -b
 
 # switch to another branch `git checkout feature`
 hg update feature
+
+# diff between revisions `git diff $hash1..$has2`
+hg diff -r 127 -r 130 # hg diff -r $rev1 -r rev2
+# hg log shows something like:
+#              $rev:$hash
+# changeset:   3641:07dcw41efwe1
 ```
