@@ -2,6 +2,10 @@
 Mergurial guide (for git users)
 
 ```bash
+# setup user name settings `git config --global user.name "Maksim Kostromin"; git config --global user.email daggerok@gmail.com`
+hg config --edit
+# username = Maksim Kostormin <maksim.kostromin@jeppesen.com>
+
 # init repo `git init`
 hg init
 
