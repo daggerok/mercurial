@@ -12,8 +12,8 @@ hg init
 # add files `git add .`
 hg add .
 
-# commit `git commit -am 'message'`
-hg commit -m 'message'
+# commit `git commit -am "message"`
+hg commit -m "message"
 
 # send update to remote repo `git push origin master`
 hg push
@@ -35,6 +35,9 @@ hg log
 # reset to branch `git reset --hard origin/master`
 hg update default --clean
 
-# show branches `git branch`
+# show branches `git branch -a`
 hg branches
+
+# show current branch `git branch`
+hg branch
 ```
