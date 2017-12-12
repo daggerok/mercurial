@@ -27,6 +27,9 @@ hg pull -u
 # remove files `git rm -rf some-file`
 hg remove some-file
 
+# remove files from stash `git rm -rf some-file --cached`
+hg forget some-file
+
 # status `git status`
 hg status
 
