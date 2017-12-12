@@ -30,4 +30,7 @@ hg log
 
 # reset to branch `git reset --hard origin/master`
 hg update default --clean
+
+# show branches `git branch`
+hg branches
 ```
