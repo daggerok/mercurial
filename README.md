@@ -13,7 +13,7 @@ hg commit -m 'message'
 
 # send update to remote repo `git push origin master`
 hg push
-hg push default
+hg push --branch default
 
 # get updates from repo `git pull origin master`
 hg pull
