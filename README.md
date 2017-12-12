@@ -50,8 +50,11 @@ hg identify -b
 hg update feature
 
 # diff between revisions `git diff $hash1..$has2`
-hg diff -r 127 -r 130 # hg diff -r $rev1 -r rev2
-# hg log shows something like:
+# hg diff -r $rev1 -r rev2
+hg diff -r 127 -r 130
+# hg status --rev $rev1:$rev2
+hg status --rev 127:130
+# when hg log shows something like:
 #              $rev:$hash
 # changeset:   3641:07dcw41efwe1
 ```
