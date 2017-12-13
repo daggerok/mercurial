@@ -57,4 +57,7 @@ hg status --rev 127:130
 # when hg log shows something like:
 #              $rev:$hash
 # changeset:   3641:07dcw41efwe1
+
+# revert files `git reset --hard $hash`
+hg revert --all --rev 123
 ```
