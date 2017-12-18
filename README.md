@@ -5,7 +5,7 @@ Mergurial guide (for git users)
 # setup user name settings `git config --global user.name "Maksim Kostromin"; git config --global user.email daggerok@gmail.com`
 hg config --edit
 # [ui]
-# username = Maksim Kostormin <maksim.kostromin@jeppesen.com>
+# username = Maksim Kostormin <daggerok@gmail.com>
 
 # init repo `git init`
 hg init
