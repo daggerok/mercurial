@@ -16,6 +16,9 @@ hg add .
 # commit `git commit -am "message"`
 hg commit -m "message"
 
+# commit ignorring all log and tmp files
+hg commit -X '**.log' -X '**.tmp'
+
 # send update to remote repo `git push origin master`
 hg push
 hg push --branch default
