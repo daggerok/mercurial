@@ -1,6 +1,8 @@
 # mercurial
 Mergurial guide (for git users)
 
+## commands
+
 ```bash
 # setup user name settings `git config --global user.name "Maksim Kostromin"; git config --global user.email daggerok@gmail.com`
 hg config --edit
@@ -72,3 +74,37 @@ hg status --rev 127:130
 # revert files `git reset --hard $hash`
 hg revert --all --rev 123
 ```
+
+## configurations
+
+**force mercurial do not ask password on Windows using TortoiseHg**
+
+* install TortoiseHg, let say it into `C:\opt\TortoisHg` directory
+* clone repo you want to not asked password anymore (replace my-user with yours)
+
+```bash
+hg clone ssh://hg@bitbucket.org/daggerok/rxjava-examples "C:\my-projects\rxjava-examples"
+```
+
+* edit `C:\my-projects\rxjava-examples\.hg\hgrc` file
+
+```bash
+notepad C:\my-projects\rxjava-examples\.hg\hgrc
+```
+
+* finally content of hgrc should be like so (replace my-username and my-password with yours)
+
+```config
+[paths]
+default = ssh://hg@bitbucket.org/my-username/rxjava-examples
+[ui]
+ssh = "C:\opt\TortoiseHg\lib\TortoisePlink.exe" -ssh -pw my-password
+```
+
+* verify that password is not prompting anymore
+
+```bash
+hg pull --cwd C:\my-projects\rxjava-examples
+```
+
+Done.
