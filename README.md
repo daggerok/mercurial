@@ -23,8 +23,16 @@ hg commit -X '**.log' -X '**.tmp'
 hg push
 hg push --branch default
 
-# get updates from repo `git pull origin master`
+# fetch changes from repo `git pull origin master`
 hg pull
+
+# merge dry run
+hg merge -P
+
+# merge curernt working directory with remove branch (pull must be used before merge to get changes from remote)
+hg merge
+
+# fetch (pull) changes and du update
 hg pull -u
 
 # remove files `git rm -rf some-file`
