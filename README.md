@@ -92,11 +92,11 @@ hg clone ssh://hg@bitbucket.org/daggerok/rxjava-examples "C:\my-projects\rxjava-
 notepad C:\my-projects\rxjava-examples\.hg\hgrc
 ```
 
-* finally content of hgrc should be like so (replace my-username and my-password with yours)
+* finally content of hgrc should be like so (replace my-password with yours)
 
 ```config
 [paths]
-default = ssh://hg@bitbucket.org/my-username/rxjava-examples
+default = ssh://hg@bitbucket.org/daggerok/rxjava-examples
 [ui]
 ssh = "C:\opt\TortoiseHg\lib\TortoisePlink.exe" -ssh -pw my-password
 ```
